@@ -6,643 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <link href="./css/header.css" rel="stylesheet">
+  <link href="./css/body.css" rel="stylesheet">
+  <link href="./css/footer.css" rel="stylesheet">
   <style>
-    * {
-      padding: 0px;
-      margin: 0px;
-      font-family: Poppins, Poppins-Hindi, sans-serif;
-      line-height: 34px;
-      color: #333333;
-    }
-    /* header start */
-    #style_craze_header {
-      width: 100%;
-      height: 100px;
-      position: fixed;
-      overflow: hidden;
-      z-index: 10;
-      top: 0px;
-      background-color: white;
-    }
-    #first_header_logo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    #first_header_logo > div:nth-child(2) {
-      position: absolute;
-      margin-left: 70%;
-      width: 200px;
-    }
-    #style_craze_header_search_input {
-      width: 90%;
-      height: 25px;
-      border-radius: 50px;
-      color: gray;
-      padding-left: 20px;
-      outline: none;
-      border: 1px solid gray;
-    }
-    #style_craze_header_search_btn {
-      width: 40px;
-      height: 20px;
-      position: absolute;
-      left: 80%;
-      top: 0px;
-    }
-    #second_header_categories {
-      display: flex;
-      height: 40px;
-
-      justify-content: center;
-      align-items: center;
-    }
-    .second_header_categories_middle_line {
-      margin: 0px 8px;
-      height: 70%;
-    }
-
-    /* body part start */
-    #whole_body_part_style_craze {
-      height: 950vh;
-      border: 1px solid red;
-    }
-    #style_craze_body_part {
-      width: 90%;
-      margin: auto;
-      margin-top: 100px;
-      border: 1px solid red;
-      height: auto;
-    }
-    /* body part slider start */
-    #style_craze_body_part_slider {
-      height: 490px;
-      font-weight: 400;
-      font-size: 24px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-    }
-    #style_craze_body_part_slider > div {
-      height: 450px;
-    }
-    #style_craze_body_part_slider img {
-      width: 100%;
-      height: 90%;
-    }
-    /* social media start */
-
-    .style_craze_body_part_socialmedia {
-      border: 1px solid pink;
-      width: 100%;
-      height: 100px;
-      margin-top: 30px;
-    }
-    #style_craze_body_part_socialmedia {
-    }
-    /* makeup start */
-
-    #style_craze_body_part_makeup_whole {
-      margin-top: 40px;
-      text-align: center;
-    }
-    .style_craze_body_part_makeup_whole {
-      margin-top: 100px;
-
-      text-align: center;
-    }
-
-    .h1-middle {
-      margin-top: 40px;
-      text-align: center;
-      margin-bottom: 50px;
-      position: relative;
-      top: 20px;
-    }
-
-    #style_craze_body_part_makeup {
-      display: flex;
-    }
-    #style_craze_body_part_makeup {
-      display: grid;
-      grid-template-columns: 60% 38%;
-
-      grid-gap: 2%;
-      width: 100%;
-      height: 400px;
-    }
-    #style_craze_body_part_makeup > div {
-      border: 1px solid rgb(17, 2, 2);
-      height: 400px;
-    }
-    #style_craze_body_part_makeup > div img {
-      width: 100%;
-      height: 100%;
-    }
-    #makeup_bottom_three_divs {
-      margin-top: 50px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 20px;
-    }
-    #makeup_bottom_three_divs > div {
-    }
-    #style_craze_body_part_hair_care {
-      width: 111%;
-      margin-top: 70px;
-      position: relative;
-      left: -80px;
-      height: 900px;
-      background-color: rgb(254, 92, 116);
-    }
-    #style_craze_body_part_hair_care_main {
-      display: flex;
-
-      margin: auto;
-      width: 90%;
-      height: 450px;
-    }
-
-    #style_craze_body_part_hair_care_main > div:nth-child(2) {
-      background-color: white;
-      height: 300px;
-      width: 40%;
-      position: relative;
-      margin: auto;
-      left: -100px;
-      border-radius: 10px;
-      padding: 40px;
-      box-sizing: border-box;
-    }
-    #style_craze_body_part_hair_care_two_divs {
-      display: flex;
-      align-items: center;
-
-      margin: 40px auto;
-      height: 250px;
-      width: 90%;
-    }
-    #style_craze_body_part_hair_care_two_divs > div {
-      flex: 1;
-    }
-    #style_craze_body_part_hair_care_two_divs > div img {
-      width: 50%;
-      height: 70%;
-    }
-    .style_craze_body_part_hair_care_two_divs_first {
-      display: flex;
-    }
-    .style_craze_body_part_hair_care_two_divs_first div {
-      height: 100px;
-
-      border-radius: 10px;
-      width: 100%;
-      position: relative;
-      margin: auto;
-      left: -100px;
-      padding: 20px;
-      display: grid;
-
-      background-color: white;
-    }
-    /* hair style start */
-    #hairstyle {
-      border: 10px solid green;
-      width: 100%;
-      height: 400px;
-    }
-    /* hover-over part start */
-    #style_craze_hover-over-part {
-      position: fixed;
-      visibility: hidden;
-
-      top: -5px;
-      left: 10%;
-
-      display: grid;
-      margin: auto;
-      margin-top: 100px;
-      width: 70%;
-      height: 350px;
-      background-color: white;
-    }
-    #style_craze_hover-over-part-first {
-      padding: 0px 20px;
-      display: flex;
-      width: 100%;
-      height: 40px;
-      box-sizing: border-box;
-      background-color: rgb(248, 246, 246);
-    }
-    #style_craze_hover-over-part-first > div {
-      display: flex;
-      width: 15%;
-      box-sizing: content-box;
-      height: 40px;
-
-      text-align: center;
-      justify-content: center;
-      align-items: center;
-    }
-    #style_craze_hover-over-part-second-flex {
-      display: flex;
-      height: 230px;
-      gap: 20px;
-    }
-    #style_craze_hover-over-part-second-flex > div {
-      flex: 1;
-    }
-    #style_craze_hover-over-part-second-flex > div img {
-      width: 100%;
-      height: 75%;
-    }
-    #style_craze_hover-over-part-findmore {
-      display: flex;
-      justify-content: flex-end;
-    }
-    #style_craze_hover-over-part-findmore > div {
-      width: 100px;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: rgb(241, 91, 141);
-      border: 1px solid rgb(241, 103, 149);
-      border-radius: 3px;
-      position: relative;
-      bottom: 10px;
-    }
-
-    #style_craze_header
-      #header_makeup_btn:hover
-      + #style_craze_hover-over-part {
-      visibility: visible;
-    }
-    #style_craze_media_press {
-      display: flex;
-    }
-    #style_craze_media_press > div {
-      flex: 1;
-      display: grid;
-      justify-content: center;
-      align-items: center;
-    }
-
-    /* product review start */
-    #style_craze_product_review {
-      width: 115%;
-      height: 500px;
-      position: relative;
-      left: -10%;
-      margin-top: 40px;
-
-      background-color: rgb(254, 92, 116);
-    }
-    #product_review_flex {
-      display: flex;
-      height: 77%;
-      padding: 0px 10%;
-      gap: 30px;
-    }
-    #product_review_flex > div {
-      flex: 1;
-    }
-    #product_review_flex > div img {
-      height: 70%;
-      width: 100%;
-      border-radius: 10px;
-    }
-    #product_review_flex_desc {
-      width: 80%;
-      height: 100px;
-      margin: auto;
-
-      background-color: rgb(242, 242, 242);
-      border-radius: 10px;
-      position: relative;
-      bottom: 20px;
-    }
-    /* mediacl review start */
-    #medical_review_start {
-      width: 100%;
-      height: 500px;
-      margin-top: 50px;
-    }
-    #medical_review_start_grid {
-      margin: auto;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 120px);
-      gap: 20px;
-    }
-    #medical_review_start_grid > div {
-      display: flex;
-
-      height: 100%;
-      gap: 20px;
-    }
-    #medical_review_start_grid > div > div:first-child {
-      width: 25%;
-    }
-    #medical_review_start_grid > div img {
-      width: 100%;
-      height: 100%;
-    }
-    #medical_review_start_grid + p {
-      text-align: center;
-      margin: 20px;
-    }
-    #medical_review_start_grid + p + div {
-      display: flex;
-
-      justify-content: center;
-    }
-    #medical_review_start_grid + p + div button {
-      width: 250px;
-      height: 50px;
-    }
-    /* testimonals start */
-    #style_craze_testimonals {
-      height: 0px;
-      margin-top: 40px;
-    }
-    #style_craze_testimonals_flex {
-      display: flex;
-      justify-content: center;
-    }
-    #style_craze_testimonals_flex > div {
-      flex: 1;
-      text-align: center;
-    }
-
-    /* footer-part-start */
-
-    #style_craze_footer_part_flex {
-      margin: auto;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      padding: 5% 10%;
-
-      background-color: hsl(0, 0%, 94%);
-    }
-    #style_craze_footer_part_flex p + img {
-      height: 60px;
-      width: 50%;
-    }
-    #footer_part_copyright_content {
-      padding: 10px 10%;
-      text-align: center;
-      background-color: rgb(230, 230, 230);
-    }
-    @media only screen and (min-width: 0px) and (max-width: 400px) {
-      #style_craze_header {
-        border: 1px solid red;
-        width: 100%;
-        height: 100px;
-      }
-
-      #second_header_categories {
-        display: none;
-      }
-      #first_header_logo {
-        display: grid;
-        width: 400px;
-        height: 100px;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2, 70%);
-        border: 3px solid rgb(69, 223, 31);
-        justify-content: center;
-      }
-      #first_header_logo > div {
-        /* border: 2px solid black; */
-        display: flex;
-        justify-content: center;
-        width: 100%;
-      }
-      #first_header_logo input {
-        width: 300px;
-        height: 30px;
-        border: 1px solid red;
-        /* position: relative;
-        top: 10px; */
-      }
-      #first_header_logo img {
-        width: 50%;
-        height: 20px;
-        /* position: relative;
-        left: 30px; */
-      }
-      #style_craze_header_search {
-      }
-      #first_header_logo > div:nth-child(2) {
-        position: absolute;
-        margin-left: 20px;
-        margin-top: 40px;
-        width: 400px;
-      }
-      /* body part start */
-
-      #style_craze_body_part_slider {
-        grid-template-columns: repeat(1, 1fr);
-        height: auto;
-        border: 1px solid green;
-      }
-      .style_craze_body_part_socialmedia {
-        display: none;
-      }
-      #style_craze_body_part_makeup_whole {
-        border: 10px solid green;
-        height: auto;
-      }
-      #style_craze_body_part_makeup {
-        grid-template-columns: repeat(1, 1fr);
-        height: auto;
-      }
-      #makeup_bottom_three_divs {
-        grid-template-columns: repeat(1, 1fr);
-      }
-      #makeup_bottom_three_divs img {
-        width: 100%;
-      }
-      #style_craze_body_part_hair_care {
-        border: 5px solid green;
-        height: auto;
-        width: 100%;
-        left: 0px;
-      }
-      #style_craze_body_part_hair_care_main {
-        display: grid;
-        text-overflow: ellipsis;
-      }
-      #style_craze_body_part_hair_care_main img {
-        width: 100%;
-      }
-      #style_craze_body_part_hair_care_main
-        .style_craze_body_part_hair_care_main_desc {
-        border: 3px solid rgb(26, 29, 26);
-        width: 400px;
-        text-overflow: ellipsis;
-      }
-      .style_craze_body_part_hair_care_main_desc h3 {
-        border: 4px solid gray;
-        width: 100%;
-        text-overflow: ellipsis;
-      }
-      #style_craze_body_part_hair_care_main > div:nth-child(2) {
-        border: 10px solid green;
-        left: 0px;
-        width: 100%;
-        bottom: 30px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-      #style_craze_body_part_hair_care_two_divs {
-        display: none;
-      }
-      #whole_body_part_style_craze {
-        height: auto;
-        border: 1px solid red;
-      }
-      #style_craze_media_press {
-        display: grid;
-        border: 3px solid red;
-      }
-      #style_craze_media_press > div {
-        border: 3px solid green;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-      }
-      #style_craze_media_press > div img {
-        margin: 20px;
-      }
-      #style_craze_product_review {
-        border: 3px solid green;
-        width: 100%;
-        height: auto;
-        left: 0px;
-      }
-      #product_review_flex {
-        display: grid;
-      }
-      #medical_review_start {
-        border: 3px solid red;
-        height: auto;
-      }
-      #medical_review_start_grid {
-        grid-template-columns: repeat(1, 1fr);
-      }
-      #style_craze_footer_part_flex {
-        
-      }
-      #style_craze_testimonals{
-         height: auto;
-         border: 3px solid red;
-      }
-      #style_craze_testimonals_flex {
-      display: grid;
-      justify-content: center;
-    }
-    #style_craze_footer_part_flex {
+  
    
-      
-      grid-template-columns: repeat(1, 1fr);
-     
-    }
-    }
+
+   
   </style>
   <body>
-    <div id="style_craze_header">
-      <div id="first_header_logo">
-        <div>
-          <img
-            src="https://cdn2.stylecraze.com/wp-content/themes/buddyboss-child/images/sc-logo.png"
-          />
-        </div>
-
-        <div id="style_craze_header_search">
-          <input id="style_craze_header_search_input" placeholder="Search" />
-          <div id="style_craze_header_search_btn"></div>
-        </div>
-      </div>
-      <div id="second_header_categories">
-        <div id="header_makeup_btn" onmouseover="makeup_btn_enter()">
-          MAKEUP
-        </div>
-        <div class="second_header_categories_middle_line"></div>
-        <div>HAIR CARE</div>
-        <div class="second_header_categories_middle_line"></div>
-        <div>SKIN CARE</div>
-        <div class="second_header_categories_middle_line"></div>
-        <div>HAIRSTYLES</div>
-        <div class="second_header_categories_middle_line"></div>
-        <div>HEALTH & WELLNESS</div>
-        <div class="second_header_categories_middle_line"></div>
-        <div>NEWS</div>
-        <div class="second_header_categories_middle_line"></div>
-        <div>TOOLS</div>
-        <div class="second_header_categories_middle_line"></div>
-        <div>PRODUCTS</div>
-        <div class="second_header_categories_middle_line"></div>
-        <div>ABOUTUS</div>
-      </div>
-    </div>
-
-    <div id="style_craze_hover-over-part">
-      <div id="style_craze_hover-over-part-first">
-        <div>Bridal Makeup</div>
-        <div>Celebrity Makeup</div>
-        <div>Eye Makeup</div>
-        <div>Face Makeup</div>
-        <div>Lip Make up</div>
-        <div>Makeup Ideas</div>
-        <div>Mehandi Designs</div>
-        <div>Nail Art</div>
-      </div>
-      <div id="style_craze_hover-over-part-second-flex">
-        <div>
-          <img
-            src="https://cdn2.stylecraze.com/wp-content/uploads/2015/06/Nigerian-Bridal-Makeup-%E2%80%93-A-Simple-Stepwise-Tutorial-267x300.jpg.webp"
-          />
-          <p>Nigerian Bridal Makeup – A Simple Stepwise Tutorial</p>
-        </div>
-        <div>
-          <img
-            src="https://cdn2.stylecraze.com/wp-content/uploads/2015/08/1513_Top-10-Bridal-Makeup-Packages-In-India-267x300.jpg.webp"
-          />
-          <p>10 Best Bridal Makeup Packages In India To Try In 2022</p>
-        </div>
-        <div>
-          <img
-            src="https://cdn2.stylecraze.com/wp-content/uploads/2014/09/2073-Top-5-Naturals-Salon-Bridal-Makeup-Packages-is-267x300.jpg.webp"
-          />
-          <p>Top 5 Bridal Salons With The Best Bridal Makeup Packages</p>
-        </div>
-        <div>
-          <img
-            src="https://cdn2.stylecraze.com/wp-content/uploads/2013/07/750-Top-10-Lakme-Bridal-Salon-Packages-267x300.jpg.webp"
-          />
-          <p>Top 11 Bridal Makeup Artists In India For Weddings</p>
-        </div>
-        <div>
-          <img
-            src="https://cdn2.stylecraze.com/wp-content/uploads/2012/10/Look-Perfect-For-Your-Special-Day-Bridal-Makeup-Tips-For-Dry-Skin-267x300.jpg.webp"
-          />
-          <p>
-            Look Perfect For Your Special Day – Bridal Makeup Tips For Dry Skin!
-          </p>
-        </div>
-        <div>
-          <img
-            src="https://cdn2.stylecraze.com/wp-content/uploads/2013/09/750-Top-10-Lakme-Bridal-Salon-Packages-267x300.jpg.webp"
-          />
-          <p>Top 10 Lakme Bridal Salon Packages</p>
-        </div>
-      </div>
-      <div id="style_craze_hover-over-part-findmore">
-        <div>Find more</div>
-      </div>
-    </div>
+    <div id="style_craze_header_whole_part">
+   
+  </div>
     <!-- body part start -->
     <div id="whole_body_part_style_craze">
       <div id="style_craze_body_part">
@@ -709,17 +85,17 @@
 
             <div>
               <img
-                src="https://cdn2.stylecraze.com/wp-content/uploads/2018/12/makeup-small-1.jpg.webp"
+                src="https://cdn2.stylecraze.com/wp-content/uploads/2013/02/makeup-small-2.jpg.webp"
               />
-              <p>The Best Lighting For Makeup Application</p>
-              <p>Esha Saxena ● 172 shares</p>
+              <p>How To Apply Mascara Like A Pro (Best Beginner’s Tutorial)</p>
+              <p>Shalini Roy ● 61.2 shares</p>
             </div>
             <div>
               <img
-                src="https://cdn2.stylecraze.com/wp-content/uploads/2018/12/makeup-small-1.jpg.webp"
+                src="https://cdn2.stylecraze.com/wp-content/uploads/2013/02/makeup-small-3.jpg.webp"
               />
-              <p>The Best Lighting For Makeup Application</p>
-              <p>Esha Saxena ● 172 shares</p>
+              <p>50 Top Acrylic Nail Designs and Ideas For Women To Try</p>
+              <p>Shalini Roy ● 8.3 shares</p>
             </div>
           </div>
         </div>
@@ -781,14 +157,11 @@
               />
             </div>
             <div>
-              <h1>How To Do French Makeup</h1>
+              <h1>How To Do A Top Knot – 10 Effortless DIY Top Knot Tutorials</h1>
               <p>
-                French makeup is a rage among beauty enthusiasts as it offers an
-                effortlessly flawless and elegant look. The reason is Parisian
-                women do not really seek a perfect transformative look. Their
-                makeup is all about highlighting and enhancing their natural […]
+                The topknot is the poison of choice for many women! You can be a mom, housewife, businesswoman, fitness instructor, chef, or anything else; the topknot is the most convenient and stylish hairstyle. So stick around if you want to learn […]
               </p>
-              <p>Esha Saxena ● 4.1 shares</p>
+              <p>Anjali Sayee ● 1.5 shares</p>
             </div>
           </div>
           <div id="makeup_bottom_three_divs">
@@ -796,28 +169,29 @@
               <img
                 src="https://cdn2.stylecraze.com/wp-content/uploads/2013/07/Hair-Style-Small1.jpg.webp"
               />
-              <p>The Best Lighting For Makeup Application</p>
-              <p>Esha Saxena ● 172 shares</p>
+              <p>How To Choose The Right Blonde Hair Color For Your Skin Tone</p>
+              <p>Arshiya Syeda ● 1.0 shares</p>
             </div>
 
             <div>
               <img
                 src="https://cdn2.stylecraze.com/wp-content/uploads/2013/07/Hair-Style-Small2.jpg.webp"
               />
-              <p>The Best Lighting For Makeup Application</p>
-              <p>Esha Saxena ● 172 shares</p>
+              <p>9 No-Heat Ways To Curl Your Hair</p>
+              <p>Arshiya Syeda ● 1.0 shares
+              </p>
             </div>
             <div>
               <img
                 src="https://cdn2.stylecraze.com/wp-content/uploads/2013/02/makeup-small-3.jpg.webp"
               />
-              <p>The Best Lighting For Makeup Application</p>
-              <p>Esha Saxena ● 172 shares</p>
+              <p>60 Best Bob Haircuts For Black Women You May Love To Try!</p>
+              <p>Arshiya Syeda ● 8.9 shares</p>
             </div>
           </div>
         </div>
         <div id="style_craze_body_part_hair_care">
-          <h1 class="h1-middle">SKIN STYLE</h1>
+          <h1 class="h1-middle">SKIN CARE</h1>
 
           <div id="style_craze_body_part_hair_care_main">
             <div>
@@ -846,18 +220,21 @@
             >
               <div class="style_craze_body_part_hair_care_two_divs_first">
                 <img
-                  src="https://cdn2.stylecraze.com/wp-content/uploads/2021/03/Haircare-small1.jpg.webp"
+                  src="https://cdn2.stylecraze.com/wp-content/uploads/2013/09/Skin-Care-small-1.jpg.webp"
                 />
-                <div>DIY Hair Oils For Different Hair Problems</div>
+                <div><p>10 Simple Homemade Moisturizers For Dry Skin</p>
+                  <p>Medically Reviewed By Robert Finney , Dermatology</p>
+                </div>
+                
               </div>
 
               <div class="style_craze_body_part_hair_care_two_divs_first">
                 <img
-                  src="https://cdn2.stylecraze.com/wp-content/uploads/2021/03/Haircare-small2.jpg.webp"
+                  src="https://cdn2.stylecraze.com/wp-content/uploads/2013/09/Skin-Care-small2.jpg.webp"
                 />
                 <div>
-                  <p>Damaged Hair: How To Repair, Restore, And Protect It</p>
-                  <p>Medically Reviewed By Robert Finney , Dermatology</p>
+                  <p>How To Use Olive Oil To Get Glowing Skin?</p>
+                
                 </div>
               </div>
             </div>
@@ -888,23 +265,26 @@
               <img
                 src="https://cdn2.stylecraze.com/wp-content/uploads/2014/08/H-W-Small-1.jpg.webp"
               />
-              <p>The Best Lighting For Makeup Application</p>
-              <p>Esha Saxena ● 172 shares</p>
+              <p>14 Health Benefits Of Drinking Aloe Vera Juice</p>
+              <p>Reviewed By Ariana Fiorita, RDN, Registered Dietitian Nutritionist, Registered Dietitian Nutritionist
+                ● 3.0 shares</p>
             </div>
 
             <div>
               <img
                 src="https://cdn2.stylecraze.com/wp-content/uploads/2014/08/H-W-Small-2.jpg.webp"
               />
-              <p>The Best Lighting For Makeup Application</p>
-              <p>Esha Saxena ● 172 shares</p>
+              <p>A Beginner’s Guide To Mediterranean Diet, According To</p>
+              <p>Charushila Biswas</p>
             </div>
             <div>
               <img
                 src="https://cdn2.stylecraze.com/wp-content/uploads/2014/08/H-W-Small-3.jpg.webp"
               />
-              <p>The Best Lighting For Makeup Application</p>
-              <p>Esha Saxena ● 172 shares</p>
+              <p>10 DIY Detox Drinks For Weight Loss & Cleansing</p>
+              <p>Medically Reviewed By Dr. Pallavi Srivastava , Clinical, Cardiac, Orthopedic, & Renal Nutrition
+                ● 14.7 shares
+                </p>
             </div>
           </div>
         </div>
@@ -929,7 +309,7 @@
               src="https://cdn2.stylecraze.com/wp-content/uploads/2021/06/BW-logo-300x38.png.webp"
             />
             <p>
-              HerHQ Media, India’s First Ad Revenue Generation Platform For...
+              HerHQ Media, India’s First Ad Revenue Generation Platform 
             </p>
           </div>
         </div>
@@ -948,26 +328,26 @@
             </div>
             <div>
               <img
-                src="https://cdn2.stylecraze.com/wp-content/uploads/2020/04/Maybelline-New-York-Lip-Smooth-Color-Bloom-img-product.jpg"
+                src="https://cdn2.stylecraze.com/wp-content/uploads/2020/04/Aroma-Magic-Foot-Cream-img-product-product-img-product.jpg"
               />
               <div id="product_review_flex_desc">
-                Maybelline New York Lip Smooth Color Bloom Reviews
+                Aroma Magic Foot Cream
               </div>
             </div>
             <div>
               <img
-                src="https://cdn2.stylecraze.com/wp-content/uploads/2020/04/Maybelline-New-York-Lip-Smooth-Color-Bloom-img-product.jpg"
+                src="https://cdn2.stylecraze.com/wp-content/uploads/2020/03/Stay-Quirky-Liquid-Lipstick-1.jpg.webp"
               />
               <div id="product_review_flex_desc">
-                Maybelline New York Lip Smooth Color Bloom Reviews
+                Stay Quirky Liquid Lipstick
               </div>
             </div>
             <div>
               <img
-                src="https://cdn2.stylecraze.com/wp-content/uploads/2020/04/Maybelline-New-York-Lip-Smooth-Color-Bloom-img-product.jpg"
+                src="https://cdn2.stylecraze.com/wp-content/uploads/2020/04/Nova-NHS-860-Temperature-product-image.jpg.webp"
               />
               <div id="product_review_flex_desc">
-                Maybelline New York Lip Smooth Color Bloom Reviews
+                Nova NHS 860 Temperature Control Professional Hair Straightener
               </div>
             </div>
             <!-- <div></div>
@@ -998,56 +378,56 @@
             <div>
               <div>
                 <img
-                  src="https://www.stylecraze.com/static-content/aboutus/Vindhya.jpg"
+                  src="https://cdn2.stylecraze.com/wp-content/uploads/2018/11/Dr-Perpetua-Neo-DClinPsy-UCL-MPhil-1.jpg.webp"
                 />
               </div>
               <div>
-                <p>Dr. Vindhya L Veerula</p>
-                <p>MD, FAAD</p>
+                <p>Dr Perpetua Neo</p>
+                <p> DClinPsy, UCL; MPhil, Psychologist</p>
               </div>
             </div>
             <div>
               <div>
                 <img
-                  src="https://www.stylecraze.com/static-content/aboutus/Vindhya.jpg"
+                  src="https://cdn2.stylecraze.com/wp-content/uploads/2018/11/Dr-Perpetua-Neo-DClinPsy-UCL-MPhil-1.jpg.webp"
                 />
               </div>
               <div>
-                <p>Dr. Vindhya L Veerula</p>
-                <p>MD, FAAD</p>
+                <p>Dr. Jill Carnahan</p>
+                <p> MD, ABFM, ABIHM, IFMCP, Functional Medicine Expert</p>
               </div>
             </div>
             <div>
               <div>
                 <img
-                  src="https://www.stylecraze.com/static-content/aboutus/Vindhya.jpg"
+                  src="https://cdn2.stylecraze.com/wp-content/uploads/2018/11/Alexandra-Dusenberry-MS-RDN.jpg.webp"
                 />
               </div>
               <div>
-                <p>Dr. Vindhya L Veerula</p>
-                <p>MD, FAAD</p>
+                <p>Alexandra Dusenberry</p>
+                <p> MS, RDN (Registered Dietitian Nutritionist)</p>
               </div>
             </div>
             <div>
               <div>
                 <img
-                  src="https://www.stylecraze.com/static-content/aboutus/Vindhya.jpg"
+                  src="https://cdn2.stylecraze.com/wp-content/uploads/2019/01/Mollie-Meldahl.jpg.webp"
                 />
               </div>
               <div>
-                <p>Dr. Vindhya L Veerula</p>
-                <p>MD, FAAD</p>
+                <p>Mollie Meldahl</p>
+                <p>RD, LD, CPT</p>
               </div>
             </div>
             <div>
               <div>
                 <img
-                  src="https://www.stylecraze.com/static-content/aboutus/Vindhya.jpg"
+                  src="https://cdn2.stylecraze.com/wp-content/uploads/2019/03/Dr.-Kendall-R.-Roehl.jpg.webp"
                 />
               </div>
               <div>
-                <p>Dr. Vindhya L Veerula</p>
-                <p>MD, FAAD</p>
+                <p>Dr. Kendall R. Roehl</p>
+                <p> MD, FACS, Plastic Surgeon</p>
               </div>
             </div>
           </div>
