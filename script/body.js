@@ -16,7 +16,7 @@ function bodypart() {
 
          <p>27 Cute Summer Date Ideas To Explore With Your Loved One</p>
        </div>
-       <div>
+       <div id="makeup_articles">
          <img
            src="https://cdn2.stylecraze.com/wp-content/uploads/2012/06/3-9.jpg.webp"
          />
