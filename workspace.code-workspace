@@ -1,0 +1,15 @@
+{
+  "folders": [
+	{
+		"name": "stylecraze",
+		"path": "."
+	},
+	{
+		"name": "Screenshots",
+		"path": "..\\Users\\Maghendran Anandhan\\Pictures\\Screenshots"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "stylecraze"
+  }
+}
