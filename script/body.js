@@ -9,7 +9,7 @@ function bodypart() {
          />
          <p>32 EASY Teen Hairstyles For Those Hot Summer Days</p>
        </div>
-       <div>
+       <div id="relationship_articles">
          <img
            src="https://cdn2.stylecraze.com/wp-content/uploads/2012/06/2-13.jpg.webp"
          />
