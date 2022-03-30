@@ -1,6 +1,6 @@
 
 function bodypart() {
-    return `<div id="style_craze_body_part">
+  return `<div id="style_craze_body_part">
      <!-- slider part start  -->
      <div id="style_craze_body_part_slider">
        <div id="hairstyles_for_summer">
@@ -38,9 +38,9 @@ function bodypart() {
        <h1 class="h1-middle">MAKEUP</h1>
        <div id="style_craze_body_part_makeup">
          <div>
-           <img
-             src="https://cdn2.stylecraze.com/wp-content/uploads/2018/12/Makeup-large.jpg.webp"
-           />
+          <a href="./makeup_articles_tips.html"><img
+          src="https://cdn2.stylecraze.com/wp-content/uploads/2018/12/Makeup-large.jpg.webp"
+        /></a> 
          </div>
          <div>
            <h1>How To Do French Makeup</h1>
@@ -55,9 +55,10 @@ function bodypart() {
        </div>
        <div id="makeup_bottom_three_divs">
          <div>
-           <img
-             src="https://cdn2.stylecraze.com/wp-content/uploads/2018/12/makeup-small-1.jpg.webp"
-           />
+         <a href="./bestlighting_makeup.html"> <img
+         src="https://cdn2.stylecraze.com/wp-content/uploads/2018/12/makeup-small-1.jpg.webp"
+       /></a>
+          
            <p>The Best Lighting For Makeup Application</p>
            <p>Esha Saxena ● 172 shares</p>
          </div>
