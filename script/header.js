@@ -13,9 +13,12 @@ function headerpart() {
         </div>
       </div>
       <div id="second_header_categories">
-        <div id="header_makeup_btn" onmouseover="makeup_btn_enter()">
+        <div id="header_makeup_btn" >
           MAKEUP
         </div>
+         <div><div>MAKEUP<div>
+           <div></div>
+         </div>
         <div class="second_header_categories_middle_line"></div>
         <div>HAIR CARE</div>
         <div class="second_header_categories_middle_line"></div>
