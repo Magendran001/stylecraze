@@ -143,7 +143,7 @@
   height: 400px;
 }
 /* hover-over part start */
-#style_craze_hover-over-part {
+/* #style_craze_hover-over-part {
   position: fixed;
   visibility: hidden;
 
@@ -202,7 +202,7 @@
   border-radius: 3px;
   position: relative;
   bottom: 10px;
-}
+} */
 
 #style_craze_header #header_makeup_btn:hover + #style_craze_hover-over-part {
   visibility: visible;
