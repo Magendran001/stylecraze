@@ -1,6 +1,9 @@
 function headerpart() {
   return `<div id="style_craze_header">
       <div id="first_header_logo">
+      <div id="style_craze_menu">
+      <img src="https://cdn2.iconfinder.com/data/icons/windows-9/154/menu-bar-navigation-mobile-512.png">
+      </div>
         <div>
           <img
             src="https://cdn2.stylecraze.com/wp-content/themes/buddyboss-child/images/sc-logo.png"
