@@ -64,9 +64,11 @@ function bodypart() {
          </div>
 
          <div>
-           <img
-             src="https://cdn2.stylecraze.com/wp-content/uploads/2013/02/makeup-small-2.jpg.webp"
-           />
+         <a href="./mascararticles.html">
+         <img
+         src="https://cdn2.stylecraze.com/wp-content/uploads/2013/02/makeup-small-2.jpg.webp"
+       /></a>
+          
            <p>How To Apply Mascara Like A Pro (Best Beginner’s Tutorial)</p>
            <p>Shalini Roy ● 61.2 shares</p>
          </div>
