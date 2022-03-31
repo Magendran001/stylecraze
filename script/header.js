@@ -15,7 +15,7 @@ function headerpart() {
           <div id="style_craze_header_search_btn"></div>
         </div>
       </div>
-      <div id="second_header_categories">
+      <div id="second_header_categories" class="second_header_categories">
         
         <div id="header_makeup_btn" >
          <div>MAKEUP</div>

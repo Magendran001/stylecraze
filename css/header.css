@@ -161,20 +161,28 @@
     position: relative;
     right: 20px;
   }
-
   #second_header_categories {
+    display: grid;
     display: grid;
     /* border: 10px solid green; */
     height: auto;
     grid-template-columns: repeat(1, 1fr);
     text-transform: capitalize;
     padding-left: 10px;
-    border: 2px solid red;
-    position: relative;
-    left: -1000px;
 
     color: gray;
   }
+
+  .second_header_categories {
+    position: relative;
+    left: -1000px;
+    transition: 0.5s linear;
+  }
+
+  .second_header_categories.active {
+    left: 0px;
+  }
+
   #second_header_categories > div {
     background-color: white;
     padding: 4px;

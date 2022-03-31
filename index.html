@@ -46,10 +46,9 @@
   document
     .querySelector("#style_craze_menu")
     .addEventListener("click", function () {
-      document.getElementById("second_header_categories").style.transition =
-        "all 2s";
-      document.getElementById("second_header_categories").style.position.left =
-        "0px";
+      document
+        .querySelector("#second_header_categories")
+        .classList.toggle("active");
     });
 </script>
 
